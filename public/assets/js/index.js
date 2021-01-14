@@ -12,6 +12,18 @@ if (window.location.pathname === '/notes') {
   noteList = document.querySelectorAll('.list-container .list-group');
 }
 
+// const goNotes = event => {
+//   event.preventDefault();
+  
+//   fetch('api/notes')
+//     .then(response => {
+//       if (!response.ok) {
+//         return alert(`Error: ${response.statusText}`);
+//       }
+//       return response.json();
+//     })
+// };
+
 // Show an element
 const show = (elem) => {
   elem.style.display = 'inline';
