@@ -12,18 +12,6 @@ if (window.location.pathname === '/notes') {
   noteList = document.querySelectorAll('.list-container .list-group');
 }
 
-// const goNotes = event => {
-//   event.preventDefault();
-  
-//   fetch('api/notes')
-//     .then(response => {
-//       if (!response.ok) {
-//         return alert(`Error: ${response.statusText}`);
-//       }
-//       return response.json();
-//     })
-// };
-
 // Show an element
 const show = (elem) => {
   elem.style.display = 'inline';
@@ -69,8 +57,10 @@ const renderActiveNote = () => {
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
-    noteText.value = activeNote.title;
+    noteText.value = activeNote.text;
   } else {
+    noteTitle.setAttribute('readonly', false);
+    noteText.setAttribute('readonly', false);
     noteTitle.value = '';
     noteText.value = '';
   }
