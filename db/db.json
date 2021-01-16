@@ -1,3 +1,14 @@
 {
-  "noteArray": []
+  "noteArray": [
+    {
+      "title": "Test",
+      "text": "note",
+      "id": "0"
+    },
+    {
+      "title": "Finish homework",
+      "text": "finish the final touches on homework",
+      "id": "1"
+    }
+  ]
 }
